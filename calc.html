@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+        <link rel="stylesheet" href="../htmlcss/font-awesome-4.7.0\css\font-awesome.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="calculator.js"></script>
+        <title>Kalkulator</title>
+</head>
+<body>
+        <div class="header">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <span><img src="assets/logo.png"/></span>
+                            Welcome
+                        </a>
+                      </div>
+                      <div class="collapse navbar-collapse navbar-right" id="myNavbar2">
+                        <ul class="nav navbar-nav">
+                          <li><a href="index.html">Home</a></li>
+                          <li class="active"><a href="calc.html">Calculator</a></li>
+                          <li><a href="planet.html">Planet</a></li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+        <table>
+            <tr>
+                <tr>
+                    <td class="head">
+                            Kalkulator Sederhana
+                    </td>
+                </tr>
+                <td>
+                    <input type="text" id="input" placeholder="0" readonly="readonly">
+                    <input type="text" id="answer" readonly="readonly" style="color:green";>
+                </td>
+            </tr>
+
+            <td>
+                <input type="button" value="CE" onclick="clearScreen()"style="color:white;
+                    background:red;">
+                <input type="button" value="&#247;" onclick="getOperand('/')">
+                <input type="button" value=" x " onclick="getOperand('x')">
+                <input type="button" value="&#8592;" onclick="backSpace()" style="color:red;">
+
+                <input type="button" value="1" onclick="dapetangka(1)">
+                <input type="button" value="2" onclick="dapetangka(2)">
+                <input type="button" value="3" onclick="dapetangka(3)">
+                <input type="button" value="+" onclick="getOperand('+')">
+                <br>
+                <input type="button" value="4" onclick="dapetangka(4)">
+                <input type="button" value="5" onclick="dapetangka(5)">
+                <input type="button" value="6" onclick="dapetangka(6)">
+                <input type="button" value="-" onclick="getOperand('-')">
+                <br>
+                <input type="button" value="7" onclick="dapetangka(7)">
+                <input type="button" value="8" onclick="dapetangka(8)">
+                <input type="button" value="9" onclick="dapetangka(9)">
+                <input type="button" value="( )" onclick="kurung()">
+                <br>
+                <input type="button" value="0" onclick="dapetangka(0)"style="width:192px">
+                <input type="button" value="=" onclick="compute()" style="color:white;
+                background: hsl(283, 96%, 50%);">
+                <br>
+            </td>
+        </table>
+        
+</body>
+</html>

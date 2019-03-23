@@ -1,0 +1,210 @@
+<!-- Bootstrap rapihin kolaborasi, navbar scroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span><img src="assets/logo.png"/></span>
+                    Welcome
+                </a>
+              </div>
+              <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="calc.html">Calculator</a></li>
+                  <li><a href="planet.html">Planet</a></li>
+                  <li><a href="#kolaborasi">Kolaborasi</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/a.jpg" alt="Gambar">
+                <div class="carousel-caption">
+
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="assets/b.jpg" alt="Gambar">
+                <div class="carousel-caption">
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="assets/c.jpg" alt="Love">
+                <div class="carousel-caption">
+
+                </div>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <!-- for modal pop-up -->
+    <div class="modal" id="mymodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal">x</button>
+              <h2 class="modal-title">kepo ya:)</h2>
+          </div>
+          <div class="modal-body">
+            
+            <p>Ga ada apa apa ko kosong kaya hati kamu :))</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal-->
+
+    <div class="text-center wrapper-pad" id="description" >
+        <span class="align-middle">
+
+            <h2>Siapa saya?</h2>
+            <p>Saya adalah manusia biasa yang terlahir terlalu receh , hidup saya diawali dengan menertawakan hal yang sedeherna :)</p>
+            <a href="#" data-toggle="modal"data-target="#mymodal">More info.......</a>
+          </span>
+    </div>
+
+    <div id="hoby" class="container wrapper-pad" >
+        <div class="container">
+            <h2 class="text-center">Hobby</h2>
+            <div class="row">
+                <div class="col-hoby col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="media">
+                        <div class="media-left">
+                          <img src="assets/Hoby-Photo.png" class="media-object" style="width:60px">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Fotografer</h4>
+                          <p>Hobi saya memfoto, iya memoto kamu yang sudah bersama selama 2 tahun namun memilih yang lain.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-hoby col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="media">
+                      <div class="media-left">
+                        <img src="assets/Hoby-Pencil.png" class="media-object" style="width:60px">
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Coding</h4>
+                        <p>Yups yang seperti anda lihat hobi saya ngoding karena coding adalah hobi saya.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-hoby col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="media">
+                        <div class="media-left">
+                          <img src="assets/Hoby-Pencil.png" class="media-object" style="width:60px">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Menulis</h4>
+                          <p>Yups hobi saya juga menulis , menulis sebuah lembaran baru dengan orang yang saya cintai.</p>
+                          <br/>
+                          <p>Netijen : Hilih bucin~.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div id="portfolio" class="wrapper-pad">
+      <div class="container">
+          <h2 class="text-center">Portfolio</h2>
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Tanggal</th>
+                  <th>Deskripsi Portfolio</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+    <div id="kolaborasi" class="wrapper-pad">
+      <div class="container">
+          <h2 class="text-center">Kolaborasi</h2>
+          <form action="https://formspree.io/haryadipradipta@gmail.com" method="POST" >
+            <div class="form-group">
+              <label for="">Email:</label>
+              <input type="email" name="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="note">Note:</label>
+                <textarea class="form-control" rows="5" id="note"></textarea>
+              </div>
+            <button type="submit" class="btn btn-default" value="Send">Submit</button>
+          </form>
+      </div>
+    </div>
+    
+    <div class="footer text-center">
+      <h5 class="">Created By Pradipta Dwi Haryadi</h5>
+      <span><a href="http://instagram.com/pradiptadh"><i class="fa fa-instagram  fa-2x" aria-hidden="true"></i></a></span>
+      <span><a href="http://twitter.com/pradiptadh"><i class="fa fa-twitter  fa-2x" aria-hidden="true"></i></a></span>
+    </div>
+</body>
+</html>
